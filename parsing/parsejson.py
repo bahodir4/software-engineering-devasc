@@ -8,6 +8,6 @@ print(ourjson)
 
 print("The access token is: {}".format(ourjson['access_token']))
 print("The token expires in {} seconds.".format(ourjson['expires_in']))
-
+print("\nParsed by: Sarvar Akimov (12214739)")
 print("\n\n---")
 print(yaml.dump(ourjson))
