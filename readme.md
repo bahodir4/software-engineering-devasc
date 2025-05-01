@@ -57,7 +57,7 @@ TRACE=your_graphhopper_api_key
 ## 🚀 Running the Application
 
 ```bash
-python main.py
+python api.py
 ```
 
 The application will launch on `http://localhost:8000`
