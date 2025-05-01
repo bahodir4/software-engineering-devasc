@@ -1,0 +1,46 @@
+# Use an official Python runtime as a parent image
+FROM python:3.9-slim-buster
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    software-properties-common \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Create a virtual environment
+RUN python -m venv venv
+
+# Activate virtual environment and upgrade pip
+RUN . venv/bin/activate && \
+    pip install --upgrade pip
+
+# Install Python dependencies
+RUN . venv/bin/activate && \
+    pip install -r requirements.txt
+
+# Expose the port the app runs on
+EXPOSE 8000
+
+# Set environment variables
+# Use ARG for build-time variables that can be overridden
+ARG TRACE
+ENV TRACE=${TRACE}
+
+# Create a non-root user for security
+RUN useradd -m appuser
+USER appuser
+
+# Health check to ensure the application is running
+HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost:8000 || exit 1
+
+# Command to run the application
+CMD ["/bin/bash", "-c", ". venv/bin/activate && python main.py"]

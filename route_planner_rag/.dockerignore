@@ -1,0 +1,43 @@
+# Version Control
+.git
+.gitignore
+
+# Virtual Environment
+venv
+*.venv
+env
+.env
+
+# Python cache files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# IDE and Editor folders
+.vscode
+.idea
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Testing and CI
+.pytest_cache
+.coverage
+htmlcov
+
+# Dependency caches
+.pip-cache
