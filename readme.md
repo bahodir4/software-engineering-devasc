@@ -32,7 +32,7 @@ The Professional Transportation Planner is an intelligent route analysis and nav
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/route-planner-rag.git
+git clone https://github.com/bahodir4/software-engineering-devasc.git
 cd route-planner-rag
 ```
 
@@ -121,10 +121,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📞 Contact
 
-Your Name - your.email@example.com
-
-Project Link: [https://github.com/yourusername/route-planner-rag](https://github.com/yourusername/route-planner-rag)
-
+Your Name - bakhodirnematanov@gmail.com
+Project Link: [https://github.com/bahodir4/software-engineering-devasc.git]
 ## 🙏 Acknowledgements
 
 - [Gradio](https://www.gradio.app/)
