@@ -1,5 +1,8 @@
 # 🌐 Professional Transportation Planner
 
+## Video Link:
+https://www.canva.com/design/DAGmZXWVGn0/EcF5Se2KCQgf3PDUxWBRuA/edit?utm_content=DAGmZXWVGn0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ## Overview
 
 The Professional Transportation Planner is an intelligent route analysis and navigation application that leverages AI to provide comprehensive transportation insights. This project combines geolocation services, route planning, and an AI-powered assistant to help users make informed travel decisions.
